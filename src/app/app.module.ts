@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { MdCoreModule } from '@angular2-material/core';
+// Material 2 
+import { MdCoreModule } from '@angular2-material/core'
 import { MdButtonModule } from '@angular2-material/button';
 import { MdCardModule } from '@angular2-material/card';
-import { MdSidenavModule } from '@angular2-material/sidenav';
-import { MdGridListModule } from '@angular2-material/grid-list';
+import { MdRadioModule } from '@angular2-material/radio';
+import { MdCheckboxModule } from '@angular2-material/checkbox'
+import { MdTooltipModule } from '@angular2-material/tooltip';
+import { MdSliderModule } from '@angular2-material/slider';
+import 'hammerjs';
 
 import { AppComponent } from './app.component';
 
@@ -19,11 +23,16 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MdCoreModule,
-    MdButtonModule,
-    MdCardModule,
-    MdSidenavModule,
-    MdGridListModule
+    MdCoreModule, MdCardModule, MdButtonModule, MdRadioModule,
+    MdCheckboxModule, MdTooltipModule, MdSliderModule,
+
+    // MdButtonToggleModule.forRoot(),
+    // MdDialogModule.forRoot(),
+    // MdIconModule.forRoot(),
+    // MdMenuModule.forRoot(),
+    MdRadioModule.forRoot(),
+    MdTooltipModule.forRoot(),
+    // OverlayModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,46 +1,32 @@
-<button md-button>FLAT</button>
-<button md-raised-button>RAISED</button>
-<button md-icon-button>
-    <md-icon class="md-24">favorite</md-icon>
-</button>
-<button md-fab>
-    <md-icon class="md-24">add</md-icon>
-</button>
-<button md-mini-fab>
-    <md-icon class="md-24">add</md-icon>
-</button>
+<div class="app-content">
+  <h1>{{title}}</h1>
 
-<md-card>
-   <md-card-title-group>
-      <img md-card-sm-image>
-      <md-card-title>Card with title</md-card-title>
-      <md-card-subtitle>Subtitle</md-card-subtitle>
-   </md-card-title-group>
-</md-card>
+  <!-- Buttons -->
+  <md-card>
+    <button md-button>FLAT</button>
+    <button md-raised-button md-tooltip="This is a tooltip!">RAISED</button>
+    <button md-raised-button color="primary">PRIMARY RAISED</button>
+    <button md-raised-button color="accent">ACCENT RAISED</button>
+  </md-card>
 
-<md-checkbox>
-  I have read and agree to the terms of service.
-</md-checkbox>
+  <!-- Checkboxes -->
+  <md-card>
+    <md-checkbox>Unchecked</md-checkbox>
+    <md-checkbox [checked]="true">Checked</md-checkbox>
+    <md-checkbox [indeterminate]="true">Indeterminate</md-checkbox>
+    <md-checkbox [disabled]="true">Disabled</md-checkbox>
+  </md-card>
 
+  <!-- Radio Buttons -->
+  <md-card>
+    <md-radio-button name="symbol">Alpha</md-radio-button>
+    <md-radio-button name="symbol">Beta</md-radio-button>
+    <md-radio-button name="symbol" disabled>Gamma</md-radio-button>
+  </md-card>
 
-  <md-sidenav-layout>
-    <md-sidenav #start (open)="mybutton.focus()">
-      Start Sidenav.
-      <br>
-      <button md-button #mybutton (click)="start.close()">Close</button>
-    </md-sidenav>
-    <md-sidenav #end align="end">
-      End Sidenav.
-      <button md-button (click)="end.close()">Close</button>
-    </md-sidenav>
-
-    My regular content. This will be moved into the proper DOM at runtime.
-  </md-sidenav-layout>
-
-
-<md-grid-list cols="4" [style.background]="'lightblue'">
-   <md-grid-tile>One</md-grid-tile>
-   <md-grid-tile>Two</md-grid-tile>
-   <md-grid-tile>Three</md-grid-tile>
-   <md-grid-tile>Four</md-grid-tile>
-</md-grid-list>
+  <!-- Slider -->
+  <md-card>
+    <md-slider min="1" max="5"></md-slider>
+  </md-card>
+  
+</div>
