@@ -11,6 +11,7 @@ import { MdRadioModule } from '@angular2-material/radio';
 import { MdCheckboxModule } from '@angular2-material/checkbox'
 import { MdTooltipModule } from '@angular2-material/tooltip';
 import { MdSliderModule } from '@angular2-material/slider';
+import { MdIconModule, MdIconRegistry } from '@angular2-material/icon';
 import 'hammerjs';
 
 import { AppComponent } from './app.component';
@@ -24,17 +25,24 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule,
     MdCoreModule, MdCardModule, MdButtonModule, MdRadioModule,
-    MdCheckboxModule, MdTooltipModule, MdSliderModule,
+    MdCheckboxModule, MdTooltipModule, MdSliderModule, MdIconModule,
+
+    // MdCoreModule.forRoot(),
+    // MdCardModule.forRoot(),
 
     // MdButtonToggleModule.forRoot(),
     // MdDialogModule.forRoot(),
-    // MdIconModule.forRoot(),
+    MdIconModule.forRoot(),
     // MdMenuModule.forRoot(),
     MdRadioModule.forRoot(),
-    MdTooltipModule.forRoot(),
+    MdTooltipModule.forRoot()
     // OverlayModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(mdIconRegistry: MdIconRegistry) {
+    mdIconRegistry.registerFontClassAlias('fontawesome', 'fa');
+  }
+}
