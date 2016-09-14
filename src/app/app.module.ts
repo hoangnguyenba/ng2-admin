@@ -11,6 +11,7 @@ import { MdRadioModule } from '@angular2-material/radio';
 import { MdCheckboxModule } from '@angular2-material/checkbox'
 import { MdTooltipModule } from '@angular2-material/tooltip';
 import { MdSliderModule } from '@angular2-material/slider';
+import { MdSidenavModule } from '@angular2-material/sidenav';
 import { MdIconModule, MdIconRegistry } from '@angular2-material/icon';
 import 'hammerjs';
 
@@ -26,6 +27,7 @@ import { AppComponent } from './app.component';
     HttpModule,
     MdCoreModule, MdCardModule, MdButtonModule, MdRadioModule,
     MdCheckboxModule, MdTooltipModule, MdSliderModule, MdIconModule,
+    MdSidenavModule,
 
     // MdCoreModule.forRoot(),
     // MdCardModule.forRoot(),
@@ -35,7 +37,8 @@ import { AppComponent } from './app.component';
     MdIconModule.forRoot(),
     // MdMenuModule.forRoot(),
     MdRadioModule.forRoot(),
-    MdTooltipModule.forRoot()
+    MdTooltipModule.forRoot(),
+    MdSidenavModule.forRoot()
     // OverlayModule.forRoot(),
   ],
   providers: [],
