@@ -15,7 +15,8 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "styles.css"
+        "styles.css",
+        "ng2-admin-theme.scss"
       ],
       "scripts": [],
       "environments": {
