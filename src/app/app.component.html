@@ -1,57 +1,6 @@
-<div class="app-content">
-  <h1>{{title}}</h1>
-
-  <!-- Buttons -->
-  <md-card>
-    <button md-button>FLAT</button>
-    <button md-raised-button md-tooltip="This is a tooltip!">RAISED</button>
-    <button md-raised-button color="primary">PRIMARY RAISED</button>
-    <button md-raised-button color="accent">ACCENT RAISED</button>
-  </md-card>
-
-  <!-- Checkboxes -->
-  <md-card>
-    <md-checkbox>Unchecked</md-checkbox>
-    <md-checkbox [checked]="true">Checked</md-checkbox>
-    <md-checkbox [indeterminate]="true">Indeterminate</md-checkbox>
-    <md-checkbox [disabled]="true">Disabled</md-checkbox>
-  </md-card>
-
-  <!-- Radio Buttons -->
-  <md-card>
-    <md-radio-button name="symbol">Alpha</md-radio-button>
-    <md-radio-button name="symbol">Beta</md-radio-button>
-    <md-radio-button name="symbol" disabled>Gamma</md-radio-button>
-  </md-card>
-
-  <!-- Slider -->
-  <md-card>
-    <md-slider min="1" max="5"></md-slider>
-  </md-card>
-
-  <md-icon>fingerprint</md-icon>
-  <button md-icon-button>
-    <md-icon class="md-24">favorite</md-icon>
-  </button>
-  <button md-fab>
-    <md-icon class="md-24">fingerprint</md-icon>
-  </button>
-  <button md-mini-fab>
-    <md-icon class="md-24">add</md-icon>
-  </button>
-  
-</div>
-
-<md-sidenav-layout>
-  <md-sidenav #start (open)="mybutton.focus()">
-    Start Sidenav.
-    <br>
-    <button md-button #mybutton (click)="start.close()">Close</button>
-  </md-sidenav>
-  <md-sidenav #end align="end">
-    End Sidenav.
-    <button md-button (click)="end.close()">Close</button>
-  </md-sidenav>
-
-  My regular content. This will be moved into the proper DOM at runtime.
-</md-sidenav-layout>
+<md-card>
+  <md-checkbox>Unchecked</md-checkbox>
+  <md-checkbox [checked]="true">Checked</md-checkbox>
+  <md-checkbox [indeterminate]="true">Indeterminate</md-checkbox>
+  <md-checkbox [disabled]="true">Disabled</md-checkbox>
+</md-card>
