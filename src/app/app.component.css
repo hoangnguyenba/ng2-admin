@@ -1,27 +1,20 @@
-md-sidenav-layout.ng2-admin-dark {
-  background: black;
-}
-
 .app-content {
   padding: 20px;
 }
 
-.app-content md-card {
-  margin: 20px;
-}
-
 .app-sidenav {
-  padding: 10px;
-  min-width: 100px;
+  min-width: 260px;
 }
 
-.app-content md-checkbox {
-  margin: 10px;
+.app-sidenav md-toolbar .logo {
+    height: 60px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
-.app-toolbar-filler {
+/*.app-toolbar-filler {
   flex: 1 1 auto;
-}
+}*/
 
 .app-toolbar-menu {
   padding: 0 14px 0 14px;
