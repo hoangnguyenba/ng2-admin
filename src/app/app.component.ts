@@ -8,6 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app works!';
 
+  
+  menus: string[] = [
+    "Dashboard",
+    "About"
+  ];
+
   foods: any[] = [
     {name: 'Pizza', rating: 'Excellent'},
     {name: 'Burritos', rating: 'Great'},
