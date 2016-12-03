@@ -2,10 +2,13 @@ import { NgModule }     from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AdminComponent } from './admin.component';
+import { AuthGuard } from '../auth-guard.service';
 
 const adminRoutes: Routes = [
   { 
-    path: '', component: AdminComponent
+    path: '', 
+    component: AdminComponent,
+    canActivate: [AuthGuard]
   }
 
 ];
@@ -18,6 +21,7 @@ const adminRoutes: Routes = [
   ],
   exports: [
     RouterModule
-  ]
+  ],
+  providers: [AuthGuard]
 })
 export class AdminRoutingModule {}

@@ -17,7 +17,14 @@
 
   <md-toolbar color="primary">
     <button class="app-icon-button" (click)="sidenav.toggle()">
-      <i class="material-icons app-toolbar-menu">menu</i>
+      <md-icon class="app-toolbar-menu">menu</md-icon>
+    </button>
+
+    <!-- This fills the remaining space of the current row -->
+    <span class="app-toolbar-filler"></span>
+
+    <button (click)="logout()">
+      <md-icon>power_settings_new</md-icon>
     </button>
   </md-toolbar>
 
