@@ -7,6 +7,8 @@ import { AppRoutingModule } from "./app-routing.module";
 
 import { RouterModule, Routes } from "@angular/router";
 
+import { MaterialModule } from '@angular/material';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -21,7 +23,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

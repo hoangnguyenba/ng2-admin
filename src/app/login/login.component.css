@@ -1,0 +1,21 @@
+.login-content {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background-color: #009688;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.login-content > md-card {
+	width: 500px;
+}
+
+.login-content > md-card button {
+	background-color: #4CAF50;
+	position: absolute;
+	margin: auto;
+	top: 61px;
+	right: -28px;
+}
