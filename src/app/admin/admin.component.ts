@@ -10,11 +10,13 @@ export class AdminComponent {
   menus: any[] = [
     {
       icon: "home",
-      name: "Dashboard"
+      name: "Dashboard",
+      link: "/"
     },
     {
       icon: "info",
-      name: "About"
+      name: "About",
+      link: "/about"
     }
   ];
 

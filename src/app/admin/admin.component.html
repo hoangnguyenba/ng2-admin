@@ -7,7 +7,7 @@
     </md-toolbar>
 
     <md-nav-list>
-      <md-list-item *ngFor="let menu of menus">
+      <md-list-item *ngFor="let menu of menus" routerLink="{{menu.link}}">
         <md-icon class="app-nav-list-icon">{{ menu.icon }}</md-icon>
         <p>{{ menu.name }}</p>
       </md-list-item>
