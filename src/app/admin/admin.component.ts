@@ -10,9 +10,15 @@ export class AdminComponent {
   title = 'app works!';
 
   
-  menus: string[] = [
-    "Dashboard",
-    "About"
+  menus: any[] = [
+    {
+      icon: "home",
+      name: "Dashboard"
+    },
+    {
+      icon: "info",
+      name: "About"
+    }
   ];
 
   foods: any[] = [

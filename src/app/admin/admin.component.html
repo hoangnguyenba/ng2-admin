@@ -6,12 +6,13 @@
       Material Admin
     </md-toolbar>
 
-    <md-list>
+    <md-nav-list>
       <md-list-item *ngFor="let menu of menus">
-        <md-icon>home</md-icon>
-        {{menu}}
+        <md-icon class="app-nav-list-icon">{{ menu.icon }}</md-icon>
+        <p>{{ menu.name }}</p>
       </md-list-item>
-    </md-list>
+    </md-nav-list>
+
   </md-sidenav>
 
   <md-toolbar color="primary">
