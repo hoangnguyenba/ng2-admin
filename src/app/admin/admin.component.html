@@ -16,16 +16,17 @@
   </md-sidenav>
 
   <md-toolbar color="primary">
-    <button class="app-icon-button" (click)="sidenav.toggle()">
-      <md-icon class="app-toolbar-menu">menu</md-icon>
+    <button md-button class="md-icon-button" (click)="sidenav.toggle()">
+      <md-icon>menu</md-icon>
     </button>
 
     <!-- This fills the remaining space of the current row -->
     <span class="app-toolbar-filler"></span>
 
-    <button (click)="logout()">
+    <button md-button class="md-icon-button" (click)="logout()">
       <md-icon>power_settings_new</md-icon>
     </button>
+
   </md-toolbar>
 
   <div class="app-content">
